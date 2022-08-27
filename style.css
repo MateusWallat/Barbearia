@@ -63,3 +63,79 @@ div.ps{
 
     
 }
+/* Estilo Formulario */
+.form{
+    display: flex;
+    justify-content: center;
+}
+h1,p{
+    text-align: center;
+}
+#hrform{
+    margin-left: 46%;
+    width: 120px;
+    margin-top: 5%;
+    
+}
+p{
+    font-size: 25px;
+}
+h1{
+ font-size: 50px;
+}
+.inp1{
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+.inpts{
+    
+   border: 1px solid black;
+   
+  
+}
+#inome{
+    width: 250px;
+    height: 33px;
+    margin-right: 10px;
+}
+#itelefone{
+    width: 250px;
+    height: 33px;
+    margin-right: 10px;
+
+}
+#iemail{
+    width: 250px;
+    height: 33px;
+    margin-right: 10px;
+}
+#servi{
+    width: 250px;
+    height: 33px;
+    margin-right: 10px;
+
+}
+#idata{
+    width: 250px;
+    height: 33px;
+    margin-right: 10px;
+
+}
+#ihora{
+    width: 250px;
+    height: 33px;
+    margin-right: 10px;
+
+}
+#btn{
+    width: 282px;
+    height: 76px;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+  
+   
+
+/* Fim Formulario */
