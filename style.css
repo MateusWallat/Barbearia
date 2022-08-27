@@ -1,7 +1,128 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
+
+
+header{
+    position: absolute;
+    width: 100vw;
+    height: 123px;
+    left: 0px;
+    top: 0px;
+    background: #610808;
+    color: #fff;
+    font-family: poppins;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .left-nav{
+    margin-left: 2%;
+    margin-top: 5px;
+}
+
+nav .right-nav{
+    margin-right: 7%;
+}
+
+nav .right-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+nav .right-content .ico{
+    width: 24px;
+}
+
+nav .logo{
+    display: block;
+}
+
+nav .right-nav{
+    display: flex;
+}
+
+nav .botão img{
+    width: 38px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.home{
+    background-image: url(Fundo01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .aside-left{
+    margin-top: 5rem;
+    margin-left: 16.875rem;
+}
+
+.home .aside-left h1{
+    font-size: 80px;
+    line-height: 6rem;
+    font-weight: 400;
+    font-family: bebas;
+    text-align: center;
+}
+
+.aside-left .home-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.2rem;
+}
+
+.aside-left .home-btn .botao-home{
+    width: 276px;
+    height: 84px;
+    background: #8F7B63;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: bebas;
+    cursor: pointer;
+}
+
+.article-right{
+    margin-right: 9.375rem;
+}
+
+.article-right .home-text p{
+    margin-top: 30px;
+    font-family: inter;
+    font-weight: 600;
+    line-height: 24px;
+    margin-left: 10px;
+    color: black;
+    letter-spacing: 1.8px;
+}
+
+.article-right .home-img #homeimg{
+    width: 477px;
+    height: 425px;
+    margin-top: 9rem;
+    filter: drop-shadow(0 5px 20px black) contrast(1.2) brightness(0.9);
+}
+
+/* desktop 2 */
+
 section.Bemvindo{
     background-color: #B6B5B5;
     
@@ -11,12 +132,12 @@ section.Bemvindo{
 div.texts{
     position: absolute;
     width: 516px;
-    top: 227px;
+    top: 59rem;
     left: 281px
     
 
 }
- hr{
+ .hr{
     border-color: black;
     background-color: black;
     border-radius: 3px;
@@ -58,11 +179,34 @@ div.footer{
 
 div.ps{
     margin: auto;
-    
-    
-
-    
 }
+
+/* desktop 3 */
+
+.section3{
+   background-image: url(imagens/fundo2.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   width: 100vw;
+}
+
+.section3 .container-01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .container-01 .content-01{
+    margin-top: 10rem;
+}
+
+.section3 .container-01 .content-01 .div-content-hr{
+    display: flex;
+    justify-content: center;
+}
+
 /* Estilo Formulario */
 .form{
     display: flex;
@@ -139,3 +283,15 @@ h1{
    
 
 /* Fim Formulario */
+
+
+.section3 .container-01 .content-01 .div-content-hr #hr-content{
+    border-color: white;
+    background-color: white;
+    border-radius: 3px;
+    height: 3px;
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+
