@@ -7,8 +7,8 @@
 
 header{
     position: absolute;
-    width: 100vw;
-    height: 123px;
+    width: 100%;
+    height: 100px;
     left: 0px;
     top: 0px;
     background: #610808;
@@ -24,11 +24,15 @@ nav{
 
 nav .left-nav{
     margin-left: 2%;
-    margin-top: 5px;
+    margin-top: 12px;
 }
 
 nav .right-nav{
     margin-right: 7%;
+}
+
+nav .right-nav p{
+    font-size: 0.8rem;
 }
 
 nav .right-content{
@@ -45,6 +49,8 @@ nav .right-content .ico{
 
 nav .logo{
     display: block;
+    font-size: 1.2rem;
+    margin-top: 20px;
 }
 
 nav .right-nav{
@@ -60,7 +66,9 @@ nav .botão img{
 .home{
     background-image: url(Fundo01.png);
     background-size: cover;
+    background-position-y: -2rem;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     justify-content: space-between;
@@ -68,8 +76,7 @@ nav .botão img{
 }
 
 .home .aside-left{
-    margin-top: 5rem;
-    margin-left: 16.875rem;
+    margin-left: 12rem;
 }
 
 .home .aside-left h1{
@@ -101,22 +108,26 @@ nav .botão img{
 }
 
 .article-right{
-    margin-right: 9.375rem;
+    margin-right: 3rem;
+}
+
+.article-right .home-text{
+    width: 28rem;
 }
 
 .article-right .home-text p{
-    margin-top: 30px;
+    margin-top: 1rem;
     font-family: inter;
-    font-weight: 600;
     line-height: 24px;
     margin-left: 10px;
+    font-weight: 600;
     color: black;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.4px;
+    font-size: 15px;
 }
 
 .article-right .home-img #homeimg{
-    width: 477px;
-    height: 425px;
+    width: 26.25rem;
     margin-top: 9rem;
     filter: drop-shadow(0 5px 20px black) contrast(1.2) brightness(0.9);
 }
@@ -125,18 +136,15 @@ nav .botão img{
 
 section.Bemvindo{
     background-color: #B6B5B5;
-    
-    
-
 }
+
 div.texts{
     position: absolute;
     width: 516px;
     top: 59rem;
     left: 281px
-    
-
 }
+
  .hr{
     border-color: black;
     background-color: black;
@@ -146,30 +154,40 @@ div.texts{
     margin-bottom: 20px;
     
 }
+
 #Welcome{
     padding-bottom: 15px;
     font-size: 20px;
 }
+
 #paragrao01{
     padding-top: 5px;
     font-size: 20px;
     
 }
+
 #h2{
     color: #610808;
     font-size: 30px;
     font-weight: bold;
 }
+
 div.imagem01{
     
     margin-left: 950px;
     padding-bottom: 200px;
 }
+
 div.imagem01 img{
    padding-bottom: 200px;
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .footer{
+
+
+div.footer{
+
     background-color: #610808;
     height: 287px;
 }
@@ -195,25 +213,73 @@ div.imagem01 img{
    background-image: url(imagens/fundo2.png);
    background-size: cover;
    background-repeat: no-repeat;
-   height: 100vh;
-   width: 100vw;
+   background-position: center;
+   background-attachment: fixed;
+   height: calc(100vh + 100px);
 }
 
-.section3 .container-01{
+
+#container-projetos{
+    position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.section3 .container-01 .content-01{
-    margin-top: 10rem;
+#container-projetos #cards{
+    width: 263px;
+    margin: 20px;
 }
 
-.section3 .container-01 .content-01 .div-content-hr{
+#container-projetos #cards .content1{
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(imagens/Barbeiro01.png);
+    width: 263px;
+    height: 304px;
+    margin: 30px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: hue-rotate(-10deg);
+    overflow: hidden;
 }
+
+#container-projetos #cards .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(imagens/Barbeiro2.png);
+    width: 263px;
+    height: 304px;
+    margin: 30px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: hue-rotate(-10deg);
+    overflow: hidden;
+}
+
+#container-projetos #cards .content3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(imagens/Barbeiro3.png);
+    width: 263px;
+    height: 304px;
+    margin: 30px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: hue-rotate(-10deg);
+    overflow: hidden;
+}
+
+
+/* desktop 3 */
 
 /* Estilo Formulario */
 .Formulario{
@@ -309,9 +375,73 @@ select{
     border-color: white;
     background-color: white;
     border-radius: 3px;
-    height: 3px;
+    height: 2px;
     width: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+.section3 .container-01 .content-01 p{
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 1rem;
+    font-family: Inter;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.section3 .container-01 .content-01 .titulo-barber{
+    font-weight: 400;
+    font-size: 60px;
+    font-family: bebas;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+/* cards barbeiros */
+
+.container-barber{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.container-barber #cards1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container-barber #cards2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container-barber #cards3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
