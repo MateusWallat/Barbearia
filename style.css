@@ -5,6 +5,10 @@
     max-width: 100%;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 
 header{
     width: 100%;
@@ -23,12 +27,17 @@ nav{
 }
 
 nav .left-nav{
-    margin-left: 2%;
-    margin-top: 12px;
+    margin-left: 5%;
+    margin-top: -5px;
+}
+
+nav .left-nav .box-logo{
+    width: 80px;
 }
 
 nav .right-nav{
     margin-right: 7%;
+    margin-top: -2rem;
 }
 
 nav .right-nav p{
@@ -215,7 +224,7 @@ div.imagem01 img{
    background-attachment: fixed;
    padding-top: 7rem;
    padding-bottom: 4rem;
-   height: calc(100vh + 100px);
+   height: 100vh;
    overflow: hidden;
 }
 
@@ -233,6 +242,8 @@ div.imagem01 img{
 .container-01 .content-01 p::before{
     content: "";
     display: block;
+    position: absolute;
+    top: ;
     height: 3px;
     width: 20px;
     background-color: white;
@@ -299,13 +310,12 @@ div.imagem01 img{
 }
 
 /* Estilo Formulario */
+
 .Formulario{
     background-image: url(imagens/fundo03.png);
    background-size: cover;
    height: 100vh;
    padding-top: 150px;
-   
-    
 }
 .bloco1{
     text-align: center;
