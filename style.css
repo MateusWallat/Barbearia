@@ -12,15 +12,18 @@ html{
 header{
     width: 100%;
     height: 100px;
+    position: fixed;
     left: 0px;
     top: 0px;
     background: #610808;
     color: #fff;
     font-family: poppins;
+    z-index: 1000;
 }
 
 nav{
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -30,20 +33,7 @@ nav .left-nav{
     margin-top: -5px;
 }
 
-nav .left-nav .box-logo{
-    width: 80px;
-}
-
-nav .right-nav{
-    margin-right: 7%;
-    margin-top: -2rem;
-}
-
-nav .right-nav p{
-    font-size: 0.8rem;
-}
-
-nav .right-content{
+nav .left-content{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,27 +41,60 @@ nav .right-content{
     margin-right: 20px;
 }
 
-nav .right-content .ico{
+nav .left-content p{
+    font-size: 0.8rem;
+}
+
+nav .left-content .ico{
     width: 24px;
 }
 
-nav .logo{
-    display: block;
-    font-size: 1.2rem;
-    margin-top: 20px;
-}
-
-nav .right-nav{
+nav .left-nav{
     display: flex;
 }
 
-nav .botão img{
-    width: 38px;
-    height: 32px;
-    cursor: pointer;
+nav .center-nav img{
+    width: 80px;
 }
 
-.home{
+nav .right-nav{
+    margin-right: 5%;
+    margin-top: -5px;
+}
+
+nav .right-nav #menu{
+    display: flex;
+    list-style: none;
+}
+
+nav .right-nav #menu li a{
+    position: relative;
+    margin: 20px;
+    text-decoration: none;
+    font-family: inter;
+    letter-spacing: 1px;
+    color: white;
+}
+
+nav .right-nav #menu li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: .4s;
+}
+
+nav .right-nav #menu li a:hover:after{
+    width: 100%;
+}
+
+/* home */
+
+#home{
     background-image: url(imagens/Fundo01.png);
     background-size: cover;
     background-position-y: -2rem;
@@ -84,11 +107,11 @@ nav .botão img{
     align-items: center;
 }
 
-.home .aside-left{
+#home .aside-left{
     margin-left: 12rem;
 }
 
-.home .aside-left h1{
+#home .aside-left h1{
     font-size: 80px;
     line-height: 6rem;
     font-weight: 400;
@@ -113,7 +136,14 @@ nav .botão img{
     font-weight: 400;
     font-size: 30px;
     font-family: bebas;
+    box-shadow: 5px 5px 2px #594d3e;
     cursor: pointer;
+    transition: .4s;
+}
+
+.aside-left .home-btn .botao-home:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 2px #594d3e;
 }
 
 .article-right{
@@ -146,7 +176,7 @@ nav .botão img{
 
 /* desktop 2 */
 
-section.Bemvindo{
+#Welcome-section{
     background-color: #B6B5B5;
 }
 
@@ -218,7 +248,7 @@ div.imagem01 img{
 
 /* desktop 3 */
 
-#section3{
+#barbers{
    background-image: url(imagens/fundo2.png);
    background-size: cover;
    background-repeat: no-repeat;
@@ -258,7 +288,77 @@ div.imagem01 img{
     text-shadow: 0.4px 0.4px 2px black;
 }
 
+#barbers .container-01 .content-01 .div-content-hr #hr-content{
+    border-color: white;
+    background-color: white;
+    border-radius: 3px;
+    height: 2px;
+    width: 70px;
+    margin-bottom: 15px;
+}
 
+#barbers .container-01 .content-01 p{
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 1rem;
+    font-family: Inter;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+#barbers .container-01 .content-01 .titulo-barber{
+    font-weight: 400;
+    font-size: 60px;
+    font-family: bebas;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#barbers .container-barber{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#barbers .container-barber #cards1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#barbers .container-barber #cards2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#barbers .container-barber #cards3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 #container-projetos{
     display: flex;
@@ -330,7 +430,8 @@ div.imagem01 img{
 
 /* Estilo Formulario */
 
-.Formulario{
+
+#Formulario{
     background-image: url(imagens/fundo03.png);
    background-size: cover;
    height: 100vh;
@@ -377,6 +478,14 @@ form p{
 input{
     width: 303px;
     height: 33px;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+    outline: none;
+    box-shadow: 1.5px 1.5px 3px black;
+}
+input::placeholder{
+    text-align: center;
 }
 select{
     width: 303px;
@@ -395,9 +504,7 @@ select{
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    margin-bottom:100px ;
-
-    
+    margin-bottom:100px ; 
 }
 
 .inp2{
@@ -442,77 +549,5 @@ select{
 /* Fim Formulario */
 
 
-.section3 .container-01 .content-01 .div-content-hr #hr-content{
-    border-color: white;
-    background-color: white;
-    border-radius: 3px;
-    height: 2px;
-    width: 70px;
-    margin-bottom: 15px;
-}
 
-.section3 .container-01 .content-01 p{
-    text-align: center;
-    padding: 3px;
-    margin-bottom: 1rem;
-    font-family: Inter;
-    font-size: 20px;
-    color: white;
-    text-shadow: 0 0 5px black;
-}
-
-.section3 .container-01 .content-01 .titulo-barber{
-    font-weight: 400;
-    font-size: 60px;
-    font-family: bebas;
-    color: white;
-    text-shadow: 0 0 10px black;
-}
-
-/* cards barbeiros */
-
-.container-barber{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.container-barber #cards1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 280px;
-    height: 400px;
-    margin: 30px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.container-barber #cards2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 280px;
-    height: 400px;
-    margin: 30px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.container-barber #cards3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 280px;
-    height: 400px;
-    margin: 30px;
-    border-radius: 10px;
-    overflow: hidden;
-}
 
