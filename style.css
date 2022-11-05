@@ -95,20 +95,21 @@ nav .right-nav #menu li a:hover:after{
 /* home */
 
 #home{
-    background-image: url(imagens/Fundo01.png);
+    background: url(imagens/Fundo01.png);
     background-size: cover;
-    background-position-y: -2rem;
-    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0;
     background-attachment: fixed;
-    overflow-x: hidden;
     height: 100vh;
+    width: 100vw;
+    padding: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #home .aside-left{
-    margin-left: 12rem;
+    margin-left: 10rem;
 }
 
 #home .aside-left h1{
@@ -123,10 +124,13 @@ nav .right-nav #menu li a:hover:after{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3.2rem;
+    margin-top: 2.8rem;
 }
 
 .aside-left .home-btn .botao-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 276px;
     height: 84px;
     background: #8F7B63;
@@ -137,6 +141,8 @@ nav .right-nav #menu li a:hover:after{
     font-size: 30px;
     font-family: bebas;
     box-shadow: 5px 5px 2px #594d3e;
+    text-decoration: none;
+    color: black;
     cursor: pointer;
     transition: .4s;
 }
@@ -147,7 +153,7 @@ nav .right-nav #menu li a:hover:after{
 }
 
 .article-right{
-    margin-right: 3rem;
+    margin-right: 10rem;
 }
 
 .article-right .home-text{
@@ -256,7 +262,7 @@ div.imagem01 img{
    background-attachment: fixed;
    padding-top: 7rem;
    padding-bottom: 4rem;
-   height: 100vh;
+   height: auto;
    overflow: hidden;
 }
 
@@ -553,7 +559,26 @@ select{
 
 @media screen and (max-width:1200px) {
 
-    
+   #home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;                      
+   } 
+
+   #home .aside-left{
+    margin-left: -0.5rem;
+   }
+
+   #home .aside-left h1{
+    padding-top: 10rem;
+   }
+
+   #home .article-right{
+    margin-left: 14.2rem;
+   }
 
 }
 
